@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- VideoView with weight and height set to 0dp -->
+    <VideoView
+        android:id="@+id/video_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <!-- Horizontal layout for the control buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="16dp">
+
+        <!-- Play button -->
+        <Button
+            android:id="@+id/play"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:text="Play" />
+
+        <!-- Pause button -->
+        <Button
+            android:id="@+id/pause"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="Pause" />
+
+        <!-- Stop button -->
+        <Button
+            android:id="@+id/stop"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:text="Stop" />
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
